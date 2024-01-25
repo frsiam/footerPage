@@ -13,6 +13,7 @@ body{
 }
 #top-div h6{
     margin-bottom: 10px;
+    font-weight: 600;
 }
 #top-div p{
     margin-top: 15px;
@@ -28,19 +29,26 @@ body{
     border: none;
     border-radius: 5px;
 }
+#top-div button:hover{
+    background-color:rgba(9, 3, 3, 0.927)
+}
 footer{
-    margin: 50px 50px 80px;
-    display: flex;
-    justify-content: space-around;
+    margin: 50px 90px 80px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
 }
 .box{
     border: 1px solid rgb(213, 211, 211);
     border-radius: 12px;
-    padding: 20px 50px 25px 20px;
+    padding: 20px 30px 25px 20px;
     transition: 0.3s;
 }
+.box:hover{
+    background-color: #E9EDEC;
+}
 .box p{
-    font-size: 16px;
+    font-size: 13px;
     text-decoration: underline;
     margin-top: 5px;
     margin-bottom: 8px;
@@ -63,5 +71,41 @@ footer{
     font-weight: 700;
 }
 .box-btn span{
-    font-size: 12px;
+    font-size: 11px;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 1023px) {
+    footer {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    footer {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+    }
+}
+@media  screen and (max-width: 360px) {
+    #top-div{
+        text-align: center;
+        margin: 40px 60px 15px;
+        padding: 2px 65px 2px;
+    }
+    #top-div h6{
+        margin-bottom: 5px;
+        font-weight: 600;
+    }
+    #top-div p{
+        margin-top: 15px;
+        margin-bottom: 30px;
+        padding: 15px;
+    }
+    footer {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+    }
 }
