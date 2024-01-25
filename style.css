@@ -29,12 +29,39 @@ body{
     border-radius: 5px;
 }
 footer{
-    margin: 30px 50px 80px;
+    margin: 50px 50px 80px;
     display: flex;
     justify-content: space-around;
 }
 .box{
-    border: 2px;
-    border-color: cadetblue;
-    border-radius: 5px;
+    border: 1px solid rgb(213, 211, 211);
+    border-radius: 12px;
+    padding: 20px 50px 25px 20px;
+    transition: 0.3s;
+}
+.box p{
+    font-size: 16px;
+    text-decoration: underline;
+    margin-top: 5px;
+    margin-bottom: 8px;
+}
+.icon svg{
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+.box-btn{
+    align-items: center;
+    margin-top: 20px;
+}
+.box-btn button{
+    color: white;
+    background-color: black;
+    padding: 10px 15px;
+    margin-right: 5px;
+    border: none;
+    border-radius: 20px;
+    font-weight: 700;
+}
+.box-btn span{
+    font-size: 12px;
 }
